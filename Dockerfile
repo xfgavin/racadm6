@@ -6,4 +6,4 @@ RUN echo 'deb http://linux.dell.com/repo/community/ubuntu trusty openmanage/740'
     && apt-get -qq install -y --force-yes srvadmin-idracadm \
     && apt-get -qq clean \
     && apt-get -qq autoclean
-ENTRYPOINT /opt/dell/srvadmin/bin/idracadm
+ENTRYPOINT /opt/dell/srvadmin/sbin/racadm
